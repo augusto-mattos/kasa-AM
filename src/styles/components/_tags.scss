@@ -1,0 +1,27 @@
+@use "../variables";
+
+.tags-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  .tag {
+    background-color: variables.$primary-color;
+    display: flex;
+    color: #ffffff;
+    height: 25px;
+    min-width: 115px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 768px) {
+      max-width: 84px;
+      height: 18px;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+}

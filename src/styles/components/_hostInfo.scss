@@ -1,0 +1,37 @@
+@use "../variables";
+
+.host {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  height: 64px;
+  width: 167px;
+  @media (max-width: 768px) {
+    height: 36px;
+    width: 135px;
+  }
+  .host-name {
+    color: variables.$primary-color;
+    display: flex;
+    align-items: center;
+    text-align: end;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+  .host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    @media (max-width: 768px) {
+      width: 32px;
+      height: 32px;
+      border-radius: 16px;
+    }
+  }
+}

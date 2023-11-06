@@ -1,0 +1,28 @@
+@use "./components/header";
+@use "./components/footer";
+@use "./components/banner";
+@use "./components/cards";
+@use "./components/accordion";
+@use "./components/error404";
+@use "./components/carrousel";
+@use "./pages/logement";
+@use "./components/logementInfoHeader";
+@use "./components/hostInfo";
+@use "./components/tags";
+@use "./components/rating";
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  gap: 50px;
+  font-family: "Montserrat";
+}
+
+.main-container {
+  padding: 0 20px 45px 20px;
+  @media (max-width: 768px) {
+    padding: 0 20px 20px 20px;
+  }
+}

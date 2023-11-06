@@ -1,0 +1,29 @@
+@use "../variables";
+
+.logement-title {
+  display: flex;
+  flex-direction: column;
+  color: variables.$primary-color;
+  text-align: left;
+  letter-spacing: 0em;
+  h1 {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 51px;
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+  .adresse {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    @media (max-width: 768px) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+}

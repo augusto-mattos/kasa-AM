@@ -1,0 +1,10 @@
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 196px;
+  height: 36px;
+  @media (max-width: 768px) {
+    width: 98px;
+    height: 18px;
+  }
+}

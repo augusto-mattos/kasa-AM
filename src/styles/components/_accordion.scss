@@ -1,0 +1,77 @@
+@use "../variables";
+@use "../mixins";
+
+.collapse {
+  @include mixins.desktop-max-width();
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  @media (max-width: 768px) {
+    margin-top: 0;
+  }
+  .accordion-header {
+    background-color: variables.$primary-color;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    color: #ffffff;
+    margin-top: 30px;
+    @media (max-width: 768px) {
+      margin-top: 22px;
+    }
+    h3 {
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0;
+      @media (max-width: 768px) {
+        font-size: 13px;
+        line-height: 19px;
+      }
+    }
+    .arrow {
+      transition: transform 0.3s ease-in-out;
+      &.rotate {
+        transform: rotate(180deg);
+      }
+      @media (max-width: 768px) {
+        width: 16px;
+      }
+    }
+  }
+  .accordion-content {
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    padding: 0 20px;
+    color: variables.$primary-color;
+    background-color: variables.$secondary-color;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-radius: 0 0 5px 5px;
+    transition: all 0.5s ease-in-out;
+    @media (max-width: 768px) {
+      font-size: 12px;
+      line-height: 17px;
+    }
+    &.expanded {
+      max-height: 1000px;
+      padding: 20px;
+      visibility: visible;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

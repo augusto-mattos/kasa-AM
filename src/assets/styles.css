@@ -1,0 +1,645 @@
+.navbar {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: left;
+  }
+}
+.navbar img {
+  padding: 20px 0;
+  height: 68px;
+}
+@media (max-width: 768px) {
+  .navbar img {
+    height: 46.88px;
+  }
+}
+.navbar nav {
+  display: flex;
+  gap: 57px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: right;
+}
+@media (max-width: 768px) {
+  .navbar nav {
+    margin-left: 26px;
+    gap: 26px;
+    font-size: 12px;
+    line-height: 17.11px;
+    text-transform: uppercase;
+  }
+}
+.navbar nav a {
+  color: #FF6060;
+  text-decoration: none;
+}
+.navbar nav a:not(.active) {
+  border-bottom: none;
+}
+.navbar nav a.active {
+  border-bottom: solid 1px #FF6060;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 209px;
+  gap: 20px;
+  background-color: #000000;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .footer {
+    justify-content: center;
+  }
+}
+.footer img {
+  width: 122px;
+}
+.footer p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .footer p {
+    max-width: 133px;
+    font-size: 12px;
+    line-height: 17.11px;
+    margin: 0;
+  }
+}
+
+.banner {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 223px;
+}
+@media (max-width: 768px) {
+  .banner {
+    height: 111px;
+  }
+}
+.banner .banner-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.banner .banner-opacity {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  position: absolute;
+  background-color: #000000;
+  opacity: 30%;
+}
+.banner h1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 500;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-left: 16px;
+  }
+}
+
+.gallery-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    margin-top: 0;
+  }
+}
+.gallery-container .gallery {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 50px 60px;
+  gap: 50px;
+  background-color: #F6F6F6;
+}
+@media (max-width: 1280px) {
+  .gallery-container .gallery {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-container .gallery {
+    background-color: #ffffff;
+    gap: 22px;
+    margin-top: 0;
+    padding: 22px 0;
+  }
+}
+.gallery-container .gallery .logement-card {
+  display: flex;
+  position: relative;
+  width: 340px;
+  height: 360px;
+}
+@media (max-width: 1280px) {
+  .gallery-container .gallery .logement-card {
+    width: 45%;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-container .gallery .logement-card {
+    margin: 0;
+    width: 100%;
+    height: 255px;
+  }
+}
+.gallery-container .gallery .logement-card .overlay-card {
+  display: flex;
+  position: absolute;
+  top: 0;
+  align-items: flex-end;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.gallery-container .gallery .logement-card h3 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 20px;
+}
+.gallery-container .gallery .logement-card .logement-cover {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.collapse {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .collapse {
+    margin-top: 0;
+  }
+}
+.collapse .accordion-header {
+  background-color: #FF6060;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  .collapse .accordion-header {
+    margin-top: 22px;
+  }
+}
+.collapse .accordion-header h3 {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .collapse .accordion-header h3 {
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+.collapse .accordion-header .arrow {
+  transition: transform 0.3s ease-in-out;
+}
+.collapse .accordion-header .arrow.rotate {
+  transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  .collapse .accordion-header .arrow {
+    width: 16px;
+  }
+}
+.collapse .accordion-content {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  padding: 0 20px;
+  color: #FF6060;
+  background-color: #F6F6F6;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 768px) {
+  .collapse .accordion-content {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+.collapse .accordion-content.expanded {
+  max-height: 1000px;
+  padding: 20px;
+  visibility: visible;
+}
+.collapse .accordion-content p {
+  margin: 0;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  gap: 139px;
+  margin: 94px 0;
+  color: #FF6060;
+  font-family: Montserrat;
+  text-align: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .error-container {
+    gap: 113px;
+  }
+}
+.error-container .error-code {
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 263px;
+}
+@media (max-width: 768px) {
+  .error-container .error-code {
+    font-size: 96px;
+    line-height: 137px;
+  }
+}
+.error-container .error-msg {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  height: 51px;
+}
+@media (max-width: 768px) {
+  .error-container .error-msg {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 260px;
+  }
+}
+.error-container a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 94px;
+  border-bottom: solid 1px #FF6060;
+}
+@media (max-width: 768px) {
+  .error-container a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.error-container a:visited {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+.caroussel {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+}
+.caroussel .caroussel-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  height: 425px;
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .caroussel .caroussel-container {
+    height: 255px;
+  }
+}
+.caroussel .caroussel-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.caroussel .caroussel-container .img-counter {
+  position: absolute;
+  left: 50%;
+  top: 85%;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+@media (max-width: 768px) {
+  .caroussel .caroussel-container .img-counter {
+    display: none;
+  }
+}
+.caroussel .caroussel-container .previous-img,
+.caroussel .caroussel-container .next-img {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  margin: 0 25px;
+  background: none;
+  border: none;
+}
+@media (max-width: 768px) {
+  .caroussel .caroussel-container .previous-img,
+  .caroussel .caroussel-container .next-img {
+    margin: 0 7px;
+  }
+}
+.caroussel .caroussel-container .previous-img img,
+.caroussel .caroussel-container .next-img img {
+  width: 46px;
+}
+@media (max-width: 768px) {
+  .caroussel .caroussel-container .previous-img img,
+  .caroussel .caroussel-container .next-img img {
+    width: 12px;
+  }
+}
+.caroussel .caroussel-container .previous-img {
+  position: absolute;
+  left: 0;
+  transform: rotate(180deg);
+}
+.caroussel .caroussel-container .next-img {
+  position: absolute;
+  right: 0;
+  transform: rotate(360deg);
+}
+
+.fiche-logement-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .fiche-logement-container {
+    margin-top: 0;
+    gap: 15px;
+  }
+}
+.fiche-logement-container .infos-logement {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  gap: 25px;
+}
+@media (max-width: 768px) {
+  .fiche-logement-container .infos-logement {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.fiche-logement-container .logement-header {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 768px) {
+  .fiche-logement-container .logement-header {
+    gap: 15px;
+  }
+}
+.fiche-logement-container .host-and-rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .fiche-logement-container .host-and-rating {
+    flex-direction: row-reverse;
+  }
+}
+.fiche-logement-container .description-container {
+  display: flex;
+  gap: 76px;
+}
+@media (max-width: 768px) {
+  .fiche-logement-container .description-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.fiche-logement-container .description-container .collapse {
+  margin-top: 0;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .fiche-logement-container .description-container .collapse {
+    width: 100%;
+  }
+}
+.fiche-logement-container .description-container .collapse .accordion-header {
+  margin-top: 0;
+}
+
+.logement-title {
+  display: flex;
+  flex-direction: column;
+  color: #FF6060;
+  text-align: left;
+  letter-spacing: 0em;
+}
+.logement-title h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .logement-title h1 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.logement-title .adresse {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .logement-title .adresse {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.host {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  height: 64px;
+  width: 167px;
+}
+@media (max-width: 768px) {
+  .host {
+    height: 36px;
+    width: 135px;
+  }
+}
+.host .host-name {
+  color: #FF6060;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+@media (max-width: 768px) {
+  .host .host-name {
+    font-size: 12px;
+    line-height: 17px;
+  }
+}
+.host .host-picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+}
+@media (max-width: 768px) {
+  .host .host-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+  }
+}
+
+.tags-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tags-container .tag {
+  background-color: #FF6060;
+  display: flex;
+  color: #ffffff;
+  height: 25px;
+  min-width: 115px;
+  padding: 0 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .tags-container .tag {
+    max-width: 84px;
+    height: 18px;
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  width: 196px;
+  height: 36px;
+}
+@media (max-width: 768px) {
+  .rating {
+    width: 98px;
+    height: 18px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  gap: 50px;
+  font-family: "Montserrat";
+}
+
+.main-container {
+  padding: 0 20px 45px 20px;
+}
+@media (max-width: 768px) {
+  .main-container {
+    padding: 0 20px 20px 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
